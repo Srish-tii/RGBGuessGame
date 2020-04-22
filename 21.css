@@ -2,8 +2,8 @@
 	font-family: "Montserrat","Avenir";
 	color: rgb(255,255,255);
 	background-color: steelblue;
-	padding-top:2px;
-	height: 175px;
+	padding:0.5%;
+	height: auto;
 	text-transform: uppercase;
 	transition: background 1.0s;
 }
@@ -13,14 +13,14 @@ html {
    width: 100%;
    padding: 0px;
    background-color: #232323;
-   overflow: hidden;
+   overflow-x: hidden;
 }
 .sq{
-	width: 200px;
+	width: 27%;
 	height: 180px;
 	float: left;
-	margin-top: 1.66%;
-	margin-left: 1.66%;
+	margin-top: 1.2%;
+	margin-left: 3%;
 	border-radius: 20px;
 	transition: background 1.0s;
 	transition: opacity 1.0s;
@@ -28,25 +28,25 @@ html {
 }
 .row{
 	text-align: center;
-    height: 30px;
+    height: auto;
     background-color: white;
 }
 .bt{
 	border: none;
-	height: 100%;
-	width: 150px;
 	font-weight: 700;
 	color: steelblue;
 	background-color: white;
-	text-align: auto;
 	border-color: white;
 	transition: all 0.6s;
 	text-transform: uppercase;
 	outline: none;
+	
 }
 #ps{
 	font-weight: bold;
-	
+	display:inline-block;
+	width: 20%;
+	margin:0 auto;
 }
 button:hover{
 	color:white;
@@ -57,11 +57,9 @@ button:hover{
 	background-color: steelblue;
 	color:white;
 }
-#ps{
-	display: inline-block;
-	width: 20%;
-}
 .reset{
-	margin-left: 350px;
-	margin-right: 20px;
+	margin:0 auto;
+}
+#bn{
+	margin: auto;
 }
