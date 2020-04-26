@@ -41,6 +41,7 @@ function hard()
 				{
 				document.querySelectorAll(".sq")[z].style.backgroundColor=ans;
 				document.querySelectorAll(".sq")[z].style.opacity=1;
+				document.querySelectorAll(".sq")[z].style.border="none";
 				
 				}
 				
@@ -49,7 +50,8 @@ function hard()
 			}
 			else
 			{
-				this.style.opacity=0;
+				this.style.opacity=0.1;
+				this.style.border="red solid 3px";
 				document.querySelector("p").textContent="Please Try Again :("
 			}
 		
@@ -102,6 +104,8 @@ function easy()
 				{
 				document.querySelectorAll(".sq")[z].style.backgroundColor=ans;
 				document.querySelectorAll(".sq")[z].style.opacity=1;
+				
+				document.querySelectorAll(".sq")[z].style.border="none";
 				}
 				squares[3].style.backgroundColor="#232323";
 				squares[4].style.backgroundColor="#232323";
@@ -111,8 +115,9 @@ function easy()
 			}
 			else
 			{
-				this.style.opacity=0;
+				this.style.opacity=0.1;
 				document.querySelector("p").textContent="Please Try Again!!";
+				this.style.border="red solid 3px";
 			}
 
 		});
@@ -127,5 +132,6 @@ function toreset()
 	var squares=null;
 	document.querySelector(".reset").textContent="NEW COLOURS";
 	document.querySelector(".heading").style.backgroundColor="steelblue";
+	document.querySelector(".sq").style.border="none";
 
 }
